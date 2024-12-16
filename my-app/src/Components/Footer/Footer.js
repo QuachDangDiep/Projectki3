@@ -1,100 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Footer.css";
+import React from "react";  
+import { Link } from "react-router-dom";  
+import "./Footer.css";  
 
-const Footer = () => {
-  const sections = [
-    {
-      title: "Store",
-      links: [
-        { to: "/men", label: "Men" },
-        { to: "/women", label: "Women" },
-        { to: "/children", label: "Children" },
-        { to: "/new-arrivals", label: "New Arrivals" },
-        { to: "/top-brands", label: "Top Brands" },
-        { to: "/special-offers", label: "Special Offers" },
-      ],
-    },
-    {
-      title: "About Us",
-      links: [
-        { to: "/about", label: "About Us" },
-        { to: "/clients", label: "Clients" },
-        { to: "/services", label: "Services" },
-        { to: "/best-sellers", label: "Best Sellers" },
-        { to: "/blog", label: "Blog" },
-        { to: "/contact", label: "Contact" },
-      ],
-    },
-    {
-      title: "Legal",
-      links: [
-        { to: "/terms", label: "Terms & Conditions" },
-        { to: "/privacy", label: "Privacy Policy" },
-        { to: "/legality", label: "Legality" },
-        { to: "/author-license", label: "Author License" },
-      ],
-    },
-  ];
+const Footer = () => {  
+  const sections = [  
+    {  
+      title: "Resources",  
+      links: [  
+        { to: "/press-room", label: "Press Room" },  
+        { to: "/financials", label: "Financials and Policies" },  
+        { to: "/privacy", label: "Privacy Policy" },  
+        { to: "/terms", label: "Terms of Use" },  
+        { to: "/faqs", label: "FAQs/Contact Us" },  
+      ],  
+    },  
+    {  
+      title: "About Us",  
+      links: [  
+        { to: "/about", label: "Our Team" },  
+        { to: "/careers", label: "Careers" },  
+        { to: "/api", label: "API" },  
+        { to: "/sponsorship", label: "Sponsorship" },  
+      ],  
+    },  
+  ];  
 
-  return (
-    <div className="footer">
-      <div className="footer-content">
-        {sections.map((section, idx) => (
-          <div key={idx} className="footer-section">
-            <h3>{section.title}</h3>
-            <ul>
-              {section.links.map((link, idx) => (
-                <li key={idx}>
-                  <Link to={link.to}>{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+  return (  
+    <div className="footer">  
+      <div className="footer-content">  
+        <div className="footer-logo">  
+          <h1>Charity Navigator</h1>  
+          <p>299 Market Street, Suite 250 Saddle Brook, NJ 07663</p>  
+        </div>  
 
-        <div className="footer-section subscribe">
-          <h3>Subscribe</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <input
-            className="subscribe-input"
-            type="email"
-            placeholder="Enter your email"
-          />
-          <button>Send</button>
-        </div>
+        {sections.map((section, idx) => (  
+          <div key={idx} className="footer-section">  
+            <h3>{section.title}</h3>  
+            <ul>  
+              {section.links.map((link, idx) => (  
+                <li key={idx}>  
+                  <Link to={link.to}>{link.label}</Link>  
+                </li>  
+              ))}  
+            </ul>  
+          </div>  
+        ))}  
 
-        <div className="footer-section social">
-          <h3 className="h3_us">Follow Us</h3>
-          <div className="social-icons">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                alt="Facebook"
-              />
-            </a>
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                alt="Instagram"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-      </div>
-    </div>
-  );
-};
+        <div className="footer-section subscribe">  
+          <h3>Sign up for donor tips and resources</h3>  
+          <input type="text" placeholder="First name" />  
+          <input type="text" placeholder="Last name" />  
+          <input type="email" placeholder="Email" />  
+          <button>Sign up now</button>  
+        </div>         
+      </div>  
+
+      <div className="footer-bottom">  
+        <p>&copy; 2024 Charity Navigator. All rights reserved.</p>  
+      </div>  
+    </div>  
+  );  
+};  
 
 export default Footer;

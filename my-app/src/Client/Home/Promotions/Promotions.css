@@ -1,70 +1,138 @@
-.promotions-container {
-  padding: 20px;
-  text-align: center;
-}
-
-.promotions-title {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.promotions-grid {
-  display: flex; /* Dùng flexbox để các sản phẩm nằm ngang */
-  gap: 20px;
-  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
-  flex-wrap: wrap; /* Đảm bảo các sản phẩm sẽ xuống hàng nếu không đủ chỗ */
-}
-
-.promotion-card {
-  background-color: transparent; /* Xóa màu nền */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  width: 300px; /* Cố định chiều rộng */
-}
-
-.promotion-card:hover {
-  transform: translateY(-10px);
-}
-
-.promotion-image {
+.promo-div{
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+}
+.promo-aem{
+  background-color: #f7f5f3;
+  display: block;
+  width: 100%;
+}
+.promo-list{
+  margin-left: 0;
+  padding-top: 80px !important;
+  padding-bottom: 80px;
+}
+.promo-warp{
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.promotion-title {
-  font-size: 1.5rem;
-  color: #444;
-  margin: 10px 0;
+.promo-header{
+  margin: 20px 20px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.promotion-description {
+.promo-title{
+  font-size: 33.18px;
+  line-height: 37px;
+  color: #001936;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: normal;
+  font-family: sofia-pro;
+}
+li.promo-Item {
+  list-style-type: none; /* Loại bỏ dấu chấm */
+}
+.promo-a{
+  font-family: sofia-pro;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 9px 18px;
+  border: 0;
   font-size: 1rem;
-  color: #666;
-  margin: 10px 0;
-}
-
-.promotion-valid {
-  font-size: 0.9rem;
-  color: #999;
-  margin-bottom: 10px;
-}
-
-.promotion-button {
-  background-color: #ff6f61;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
-  margin-bottom: 15px;
+  background: #49516f;
+  color: #fff;
+  text-decoration: none;
+  font: inherit;
+}
+.promo-cards{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  min-height: 430px;
+}
+.promo-active{
+  position: static;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding-left: 0px;
+  margin-left: 0 !important;
+  justify-content: left;
+}
+.promo-Item{
+  border-radius: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  width: 393.33px;
+  height: 422.6px;
+  box-shadow: 10px 10px 15px 0 #e6e8ef;
+  padding: 0;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+.promo-Item:hover{
+  transform: scale(1.05);
 }
 
-.promotion-button:hover {
-  background-color: #e6554f;
+.promo-content{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+.promo-discover{
+  display: none;
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+.promo-image{
+  height: 190px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+.promo-anh{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+.promo-description{
+  flex-grow: 1;
+  padding: 20px 20px 65px;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #cdd1e0;
+    height: calc(100% - 190px);
+    border-radius: 0 0 20px 20px;
+    min-height: 190px
+}
+.promp-ton{
+  text-align: left;
+  font-family: sofia-pro;
+  font-size: 25.04px;
+  line-height: 29px;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    color: #001936;
+    margin-bottom: 16px;
+    letter-spacing: -0.2px
+}
+.promo-date{
+  font-family: sofia-pro;
+  text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    color: #001936;
+    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 24px;
 }

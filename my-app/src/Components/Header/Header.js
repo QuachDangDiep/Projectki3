@@ -27,7 +27,7 @@ export const Header = () => {
       {/* Logo */}
       <div className="logo-search-container">
         <div className="logo-header">
-          <h1>MyLogo</h1>
+          <img src="https://www.charitynavigator.org/content/dam/cn/cn/logos/CharityNav_Logo_Hor1.png" alt="logo"/>
         </div>
       </div>
 
@@ -41,6 +41,14 @@ export const Header = () => {
         >
           <Link to="/">Home</Link>
         </div>
+        {/* <div
+          className={`navbar-header-product ${
+            activeLink === "productclient" ? "active" : ""
+          }`}
+          onClick={() => handleLinkClick("productclient")}
+        >
+          <Link to="/productclient">Product</Link>
+        </div> */}
         <div
           className={`navbar-header-about ${
             activeLink === "about" ? "active" : ""

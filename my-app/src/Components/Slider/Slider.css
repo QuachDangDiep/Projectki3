@@ -62,38 +62,46 @@ main {
 }
 
 .content {
+  text-align: center;
   width: min(30vw, 400px);
   position: absolute;
+  /* background-color: #fff; */
+  border-radius: 25%;
   top: 50%;
-  left: 3rem;
+  left: 6rem;
   transform: translateY(-50%);
   font: 400 0.85rem helvetica, sans-serif;
   color: white;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   opacity: 0;
   display: none;
-
-  & .title {
-    font-family: "arial-black";
-    text-transform: uppercase;
-  }
-
-  & .description {
-    line-height: 1.7;
-    margin: 1rem 0 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  & button {
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: white;
-    border: 2px solid white;
-    border-radius: 0.25rem;
-    padding: 0.75rem;
-    cursor: pointer;
-  }
 }
+.title {
+  font-family: "arial-black";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #333;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.7;
+  margin: 1rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+.slider-more {
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
 
 .item:nth-of-type(2) .content {
   display: block;

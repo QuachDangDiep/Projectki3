@@ -24,7 +24,8 @@
 }
 
 /* Logo */
-.logo-header h1 {
+.logo-header img {
+  width: 240px;
   font-size: 30px;
   margin: 0;
   color: #f39c12;

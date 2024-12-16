@@ -10,6 +10,7 @@ import CartForm from "./Client/Cart/CartForm";
 import ForgotAndResetPassword from "./Client/ForgotPassword/ForgotPassword";
 import Authentication from "./Admin/Authentication/Authentication";
 import AuthContext, { AuthProvider } from "./Context/AuthContext"; // Import AuthProvider
+// import Productclient from "./Client/Productclient/Productclient";
 
 // Admin routes
 import Dashboard from "./Admin/Dashboard/Dashboard";
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           {/* Client Routes */}
           <Route path="/" element={<Home />} />
+          {/* <Route path="/productclient" element={<Productclient/>} /> */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/news" element={<News />} />

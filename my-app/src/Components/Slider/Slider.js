@@ -20,40 +20,40 @@ const Slider = () => {
       <ul className="slider" ref={sliderRef}>
         {[
           {
-            title: "Lossless Youths",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Together, We Can Transform Lives",
+            description: "Aim for community strength in supporting difficult situations.",
             image:
-              "https://mediawinwin.vn/upload/images/sanpham/bao-gia-chup-mon-an-dich-vu-chup-anh-do-an-chuyen-nghiep-3.JPG",
+              "https://www.charitynavigator.org/adobe/dynamicmedia/deliver/dm-aid--1f13ca08-8080-4f0a-bbc8-e2cf06e045f0/hunger-services.png.webp?preferwebp=true&width=760",
           },
           {
-            title: "Estrange Bond",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Hope in Every Heart, Help in Every Hand",
+            description: "Encourage the spirit of contribution from each individual to make a difference.",
             image:
-              "https://png.pngtree.com/thumb_back/fw800/background/20231221/pngtree-gourmet-daytime-seafood-hodgepodge-indoor-food-photography-with-illustrations-photo-image_15540722.png",
+              "https://www.charitynavigator.org/adobe/dynamicmedia/deliver/dm-aid--97b706a2-b2d3-4d82-97e9-c337dad377e0/homeless_giving.png.webp?preferwebp=true&width=760",
           },
           {
-            title: "The Gate Keeper",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Building a Brighter Tomorrow, One Act of Kindness at a Time",
+            description: "Emphasize positive change through each small action",
             image:
-              "https://cdn.popsww.com/blog-kids/sites/3/2022/12/mon-an-dac-trung-ngay-tet.jpg",
+              "https://imagev3.vietnamplus.vn/w1000/Uploaded/2024/fsmsy/2024_06_16/ttxvn-tre-em-gaza-1855.jpg.webp",
           },
           {
-            title: "Last Trace Of Us",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Every Gift Counts Empowering Lives Through Generosity",
+            description: "Celebrate the meaning and value of contributions, no matter how small or large.",
             image:
-              "https://marketingbox.vn/wp-content/uploads/2024/08/loi-ich-chup-anh-mon-an-han.webp",
+              "https://www.charitynavigator.org/adobe/dynamicmedia/deliver/dm-aid--65e211ef-5bb7-4985-b3c6-c60ae21c37a4/human-trafficking.jpg.webp?preferwebp=true&width=760",
           },
           {
-            title: "Urban Decay",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Creating a World Where No One Is Left Behind",
+            description: "Aiming for a mission to eliminate inequality and bring opportunities to all.",
             image:
-              "https://mediawinwin.vn/upload/images/sanpham/bao-gia-chup-mon-an-dich-vu-chup-anh-do-an-chuyen-nghiep-5.JPG",
+              "https://www.charitynavigator.org/adobe/dynamicmedia/deliver/dm-aid--79434f55-4f45-4108-a045-1728c7d23bba/larm-rmah-AEaTUnvneik-unsplash1.jpg.webp?preferwebp=true&width=760",
           },
           {
-            title: "The Migration",
-            description: "Lorem ipsum dolor sit amet...",
+            title: "Your Compassion, Their Hope",
+            description: "Connect supporters with people receiving help.",
             image:
-              "https://statics.vincom.com.vn/xu-huong/chi_tiet_xu_huong/mon-an-han-quoc/gimpapne-1200x676.jpeg",
+              "https://cdn.tuoitrethudo.vn/stores/news_dataimages/2023/032023/23/10/in_article/bai-nguoi-tre-120230323105950.jpg?rt=20230323105959",
           },
         ].map((slide, index) => (
           <li
@@ -64,7 +64,7 @@ const Slider = () => {
             <div className="content">
               <h2 className="title">{slide.title}</h2>
               <p className="description">{slide.description}</p>
-              <button>Read More</button>
+              <button className="slider-more">Read More</button>
             </div>
           </li>
         ))}
